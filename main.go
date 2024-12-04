@@ -16,7 +16,7 @@ var AlarmChannel = make(chan map[string]string, 100)
 
 func main() {
 	go server.StartServer(":1337")
-	host := "tcp://railwaysignaling.com"
+	host := address
 	port := "1883"
 	topics := map[string]byte{"sensor_NOQ": 1, "sensor_SUA": 1, "sensor_JGM": 1} //"sensor_data5": 1, "sensor_LKR": 1}
 
