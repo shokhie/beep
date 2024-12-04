@@ -1,0 +1,56 @@
+Stn: NOQ, Loc: L5, Name: 103 
+Geartype: PM, Subgear: A 
+Expression: VNO > 90000 && VNS < 130000 || VRRS < 90000 
+Alarm Trigggered at time: 2024-10-10 12:22:42.810610169 +0530 IST m=+106.385409408
+Stn: NOQ, Loc: WEST HUT, Name: OC1T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:26:54.375283238 +0530 IST m=+5.477394820
+Stn: NOQ, Loc: L6, Name: 115T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:27:00.934282548 +0530 IST m=+12.036394130
+Stn: NOQ, Loc: L5, Name: 103 
+Geartype: PM, Subgear: A 
+Expression: VNO > 90000 && VNS < 130000 || VRRS < 90000 
+Alarm Trigggered at time: 2024-10-10 12:27:02.89782038 +0530 IST m=+13.999931964
+Stn: NOQ, Loc: NEAR HUT, Name: 112T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:27:07.032147926 +0530 IST m=+18.134259520
+Stn: NOQ, Loc: L2A, Name: C3T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:27:08.492551285 +0530 IST m=+19.594662869
+Stn: NOQ, Loc: L5, Name: 103 
+Geartype: PM, Subgear: A 
+Expression: VNO > 90000 && VNS < 130000 || VRRS < 90000 
+Alarm Trigggered at time: 2024-10-10 12:27:24.050710785 +0530 IST m=+35.152822370
+Stn: NOQ, Loc: NEAR HUT, Name: OE1T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:27:29.06938288 +0530 IST m=+40.171494465
+Stn: NOQ, Loc: L5, Name: 104T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:27:29.069386457 +0530 IST m=+40.171498038
+Stn: NOQ, Loc: NEAR HUT, Name: 109T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:27:35.051768757 +0530 IST m=+46.153880344
+Stn: NOQ, Loc: L5, Name: 103 
+Geartype: PM, Subgear: A 
+Expression: VNO > 90000 && VNS < 130000 || VRRS < 90000 
+Alarm Trigggered at time: 2024-10-10 12:27:45.802111007 +0530 IST m=+56.904222592
+Stn: NOQ, Loc: NEAR HUT, Name: 112T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:27:50.994062912 +0530 IST m=+62.096174498
+Stn: NOQ, Loc: L6, Name: OB1T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:28:01.372895695 +0530 IST m=+72.475007278
+Stn: NOQ, Loc: EAST HUT, Name: OB2T 
+Geartype: TRACK, Subgear: TF 
+Expression: IF > 100 
+Alarm Trigggered at time: 2024-10-10 12:28:02.517223743 +0530 IST m=+73.619335326

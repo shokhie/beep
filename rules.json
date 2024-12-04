@@ -1,0 +1,139 @@
+{
+    "Rules": [
+        {
+            "Geartype-Subgear": "TRACK-RLY",
+            "Condition": {
+                "AlarmName": "Possiblity of track failure",
+                "Expression": "VR < 2100 && VR > 1400",
+                "Duration": 5,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "9ad92bde-c0c9-4252-9e81-24511a4aaebf",
+                "Category": "Prediction",
+                "Severity": "WARNING"
+            },
+            "Id": "37d61cb7-82a8-4f8d-960f-a5968f6752e8"
+        },
+        {
+            "Geartype-Subgear": "TRACK-RLY",
+            "Condition": {
+                "AlarmName": "Probability of track relay going towards unsafe condition",
+                "Expression": "VR > 4200",
+                "Duration": 5,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "0d743336-1f0c-4d19-83ba-7e9ad0b3d6d0",
+                "Category": "Prediction",
+                "Severity": "WARNING"
+            },
+            "Id": "21aaa30e-9c16-4ae1-9363-aa1bf2bfcde4"
+        },
+        {
+            "Geartype-Subgear": "TRACK-TF",
+            "Condition": {
+                "AlarmName": "Low Charger Output Voltage",
+                "Expression": "VCO < 5500 && ICO < 150",
+                "Duration": 10,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "b72f60ee-8a5a-429b-b035-23f12068833c",
+                "Category": "Threshold",
+                "Severity": "WARNING"
+            },
+            "Id": "2d65fd22-12ba-4b84-8be9-d74e91a5157c"
+        },
+        {
+            "Geartype-Subgear": "TRACK-TC",
+            "Condition": {
+                "AlarmName": "Low TPR Voltage(Relay Room)",
+                "Expression": "TPR < 20000 && TPR > 17000",
+                "Duration": 5,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "df77ac4c-a691-4c20-b054-4258677d64ff",
+                "Category": "Threshold",
+                "Severity": "WARNING"
+            },
+            "Id": "9da1705e-c33f-45fb-96d8-95c82c1d8ca7"
+        },
+        {
+            "Geartype-Subgear": "SG-SHUNT",
+            "Condition": {
+                "AlarmName": "High Shunt Pilot Current",
+                "Expression": "IPL > 60",
+                "Duration": 5,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "d9becf2c-28de-4ebb-9f2b-94a7d7dd7607",
+                "Category": "Prediction",
+                "Severity": "WARNING"
+            },
+            "Id": "7dbe0c42-cf1a-435a-ae8c-5a5cef0d3f48"
+        },
+        {
+            "Geartype-Subgear": "SG-SHUNT",
+            "Condition": {
+                "AlarmName": "Low Shunt ON Current",
+                "Expression": "ION < 40 && ION > 20",
+                "Duration": 5,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "9a0c067a-7097-41c3-8074-bda308a732c1",
+                "Category": "Prediction",
+                "Severity": "WARNING"
+            },
+            "Id": "4477b293-24c5-4c8e-a5c7-896bb599746d"
+        },
+        {
+            "Geartype-Subgear": "SG-SHUNT",
+            "Condition": {
+                "AlarmName": "Low Shunt ON Voltage",
+                "Expression": "VON < 100000 && VON > 20000",
+                "Duration": 5,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "c148656b-f62d-4355-83ab-89f204ff93dd",
+                "Category": "Prediction",
+                "Severity": "WARNING"
+            },
+            "Id": "53d72386-8bb8-4bf8-9cca-44592938ee66"
+        },
+        {
+            "Geartype-Subgear": "PM-A",
+            "Condition": {
+                "AlarmName": "Point Obstruction",
+                "Expression": "OT > 8",
+                "Duration": 0,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "d8c8dc47-d3a2-4e2d-93a8-366115e2a0a3",
+                "Category": "Failed",
+                "Severity": "CRITICAL"
+            },
+            "Id": "2a2bbaaf-7ce1-4388-a06f-7a596dc9a643"
+        },
+        {
+            "Geartype-Subgear": "PM-B",
+            "Condition": {
+                "AlarmName": "Point Obstruction B",
+                "Expression": "OT > 8",
+                "Duration": 0,
+                "Stn": [
+                    "NOQ"
+                ],
+                "ConditionId": "5f5531db-a8f8-4e6a-b1cc-aed557dda21c",
+                "Category": "Failed",
+                "Severity": "CRITICAL"
+            },
+            "Id": "0173f022-808b-4c43-b812-b58b7d0dce6e"
+        }
+    ]
+}

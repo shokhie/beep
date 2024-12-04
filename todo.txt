@@ -1,0 +1,252 @@
+################
+##### TODO #####
+################
+
+## RTU Sensor Diagnosis and Monitoring.
+
+1. Write mqtt client to receive data from broker(Client Module) [Done] 
+
+2. Create a separator module to seprate stream into unique stream.(Separator Module) [Done]
+
+3. Create a filler module to continuously read and write to the map as the message stream flows.(Filler Module) [Done]
+
+4. Define methods and functions for message processing.(Message Module) [Done]
+
+5. Wgite a Parser to automatically generate rule file from the stream. [Ongoing] - Range Field ? - Decide how will you populate the range field. Function which creates the value of range field.
+   
+6. Create an interface to apply rules from rule file to stream[Done]
+
+7. Create an id timer map to store timer reference for a certain id.[Done]
+
+8. Continous read and write to idTimer Map.[Done]
+
+9. Create timer to trigger alarm if the range is outside the defined rule for certain time.(Eye Module) [Done]
+
+10. Fixing some bugs because we are reading messages from the same channel at multiple places.[Done]
+
+11. Create a frontend for rule editing.
+    * Rules are in the json format.
+      - Create Rule
+        -- Input box to enter rule.[Done]
+	-- Need change in Rule box to show rule instead of just condition.
+
+      - Update Rule
+        -- Add edit button next to the each rule which will edit it.
+
+      - Delete Rule
+        -- Add delete button next to each rule to delete it.
+
+      - Change the dropdown menu of single station selection to multiple selection.[Done]
+      
+      - Add a duration input box for duration.[Done]
+        -- make changes to the frontend to send duration in the json to the backend.
+
+      - Show the rules in the rule box of conditions.json file from the backend.
+        -- Read conditions.json file from the backend. 
+	-- Recursively check it for any added or removed rules.
+	-- update the rule box to show added rules.
+      - Show selection of multiple station down the station selection dropdown
+
+12. Need Change in the architecture of condition file used by backend to add functionality.
+    - Add support for multiple stations.[Done]
+      -- Instead of single value of STN key in conditions.json file, use a list as value of STN key.[Done]
+      -- Rewrite the GetCondition function in the condition package.[Done]
+      -- Rewrite the struct for proper deserialization of changed format.[Done]
+      -- Write a GetStn function to get STN key from conditions.json file.[Done]
+
+    - Add support for multiple condition for a specific Geartype-Subgear.
+      -- Instead of single value of CONDITION Key in conditions.json file, use a list as value of CONDITION Key.
+      -- Rewrite the GetCondition function to implement this functionality.
+      -- Rewrite the struct for proper deserialization of changed format.
+
+    - Add support to update condition for a specific Geartype-Subgear.
+      -- write an UpdateCondtion function to implement this functionality.
+
+    - Add support to delete a rule from conditions.json.
+      -- write a DeleteCondition function to implement this functionality.
+    
+    - Add support for duration in the rules.
+      -- write a GetDuration function to implement this functionality.
+
+	
+13. Write a ProcessMessage function for applying rule condition on the messages.
+
+14. creating a map of each client connection and channel and send alarm to all clients.
+
+15. Store triggered alarm in a txt file so that the client can retreive the previously triggered alarm when it starts.
+
+Estimation: 10 working days
+
+Functionality:
+	///////////////////
+	///// Backend /////
+	///////////////////
+
+	## Monitoring and Diagnosis(Manual)
+	- Apply multi key condition rule on mqtt messages.
+	- Starts timer if the rule applied is true.
+	- Stops timer if the rule applied is false.
+	- Timer will trigger Alarm if it keep running for the defined duration.
+	- Connect multiple client to the backend.
+	- By utilising the gochannels and goroutines, the backend works fast and does not need huge computing power.
+
+	## Monitoring and Diagnosis[Automatic](Not in the requirement)
+	Automatically monitor sensors for the defined duration if it is operating in the normal range or not. 
+	If the value of the keys are out of range specified in the rule file, it triggers alarm.
+	This can be used for the diagnostic purposes.
+	For eg:- Let's say a sensor is constantly sending values which is out of it's normal range for 1 day or 1 week.
+		-- On the basis of this we can say with high confidence that the sensor is faulty.
+	
+
+	////////////////////
+	///// Frontend /////
+	////////////////////
+	Create, Read, Update, Delete rule from frontend.
+	Show triggered alarm in the frontend.
+	
+24th sep 7:40 pm
+
+16. Fix logic in server0.go - 1 day[Done]
+17. Create different state for alarm - 2days
+18. Create log tab, active -> active | pending - 1 day
+19. update rule with id. 1 day
+20. Implement database to store alarm and rules.
+21. there can be string in the key value. 4 hours
+22. parameter map value can be int, bool, float. 4 hours
+23. Fix bugs. 1 day
+
+
+16 Oct 2024
+24. Update control tab ui.[4 hour]
+    - Add alarm name dropdown
+    - implement struct for storing alarm name
+    - logic for selection and sending data to the backend
+
+    - Add Severity dropdown
+    - implement struct for storing severity
+    - logic for selection and sending data to the backend
+
+    - Add Category dropdown
+    - implement struct for storing category
+    - logic for category selection and sending data to the backend
+
+25. Show rules in tabular form.[4 hour]
+    - Station column.
+    - logic for showing station from backend.
+
+    - AlarmName column.
+    - logic for showing alarm name from backend.
+
+    - type column.
+    - implement struct to store type in backend.
+    - logic for showing type from backend.
+
+    - subgear column.
+    - logic for showing subgear from backend.
+
+    - severity column
+    - implement struct to store severity in backend
+
+    - category column
+    - implement struct to store category in backend
+
+    - edit button
+    - logic for edit button
+
+26. Update Active tab[1 day]
+    - Show active alarms in tabular form
+
+    - created column
+    - logic for created column from backend
+
+    - alarm name column
+    - logic for alarm name column from backend
+    
+    - category column
+    - logic for category column from backend
+
+    - severity column
+    - logic for severity column from backend
+
+    - station column
+    - logic for station column from backend
+
+    - asset type column
+    - implement struct to store asset type
+    - logic for asset type column
+
+    - name column
+    - implement struct to store name type
+    - logic for name column
+
+27. Update close tab[1 day]
+    - show alarms which are recently triggered but now corrected.
+
+    - alarm name column
+    - logic for alarm name column from backend
+    
+    - category column
+    - logic for category column from backend
+
+    - severity column
+    - logic for severity column from backend
+
+    - station column
+    - logic for station column from backend
+
+    - asset type column
+    - implement struct to store asset type
+    - logic for asset type column
+
+    - name column
+    - implement struct to store name type
+    - logic for name column
+
+28. Update history tab[1 days]
+    - show created, closed and triggered alarms.
+
+    - created column
+    - logic for created column from backend
+
+    - alarm name column
+    - logic for alarm name column from backend
+    
+    - category column
+    - logic for category column from backend
+
+    - severity column
+    - logic for severity column from backend
+
+    - station column
+    - logic for station column from backend
+
+    - asset type column
+    - implement struct to store asset type
+    - logic for asset type column
+
+    - name column
+    - implement struct to store name type
+    - logic for name column
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+    
+
+    

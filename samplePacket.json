@@ -1,0 +1,2 @@
+{"Rule": {"Geartype-Subgear": "TRACK-RLY", "Condition": {"Expression": "updating from api", "Duration": 5, "Stn": ["NOQ"], "ConditionId": "05fe3da3-1c71-40e0-995d-3ba70b2ca0ea"}, "Category": "Testing", "Severity": "WARNING", "Id": "3ea091b6-4e3c-4e44-b670-cagc9l05fce1"}}
+

@@ -1,0 +1,152 @@
+{
+  "Alarms": [
+    {
+      "alarmId": "35661216-cc2d-47ae-9607-f5bdfe4aeeef",
+      "id": "{NOQ 101T L4 TRACK RLY}-f469d718-1ce5-4fb5-a083-c4cf8520c498",
+      "isActive": false,
+      "eventCount": 9,
+      "created At": "07-11-2024 01:28:37 PM",
+      "updated At": "07-11-2024 01:45:58 PM",
+      "cleared At": "07-11-2024 01:47:51 PM",
+      "expression": "IR > 29",
+      "alarmName": "Monitoring Track RLY",
+      "category": "Testing",
+      "severity": "CRITICAL",
+      "stns": [
+        "NOQ",
+        "JGM",
+        "SUA"
+      ],
+      "duration": 2,
+      "name": "101T",
+      "location": "L4"
+    },
+    {
+      "alarmId": "8a638d3c-cfff-4e45-80a2-ef855585bee7",
+      "id": "{NOQ 102T L4 TRACK RLY}-f469d718-1ce5-4fb5-a083-c4cf8520c498",
+      "isActive": true,
+      "eventCount": 39,
+      "created At": "07-11-2024 01:28:39 PM",
+      "updated At": "07-11-2024 02:47:40 PM",
+      "cleared At": "",
+      "expression": "IR > 29",
+      "alarmName": "Monitoring Track RLY",
+      "category": "Testing",
+      "severity": "CRITICAL",
+      "stns": [
+        "NOQ",
+        "JGM",
+        "SUA"
+      ],
+      "duration": 2,
+      "name": "102T",
+      "location": "L4"
+    },
+    {
+      "alarmId": "ad93d35b-a2eb-4e14-9250-813f7b1cc5b2",
+      "id": "{NOQ 2AT L4 TRACK RLY}-f469d718-1ce5-4fb5-a083-c4cf8520c498",
+      "isActive": false,
+      "eventCount": 10,
+      "created At": "07-11-2024 01:28:40 PM",
+      "updated At": "07-11-2024 01:47:19 PM",
+      "cleared At": "07-11-2024 01:47:56 PM",
+      "expression": "IR > 29",
+      "alarmName": "Monitoring Track RLY",
+      "category": "Testing",
+      "severity": "CRITICAL",
+      "stns": [
+        "NOQ",
+        "JGM",
+        "SUA"
+      ],
+      "duration": 2,
+      "name": "2AT",
+      "location": "L4"
+    },
+    {
+      "alarmId": "f563459c-04b1-43c1-8643-439b9d0b0743",
+      "id": "{NOQ C3T L2A TRACK RLY}-f469d718-1ce5-4fb5-a083-c4cf8520c498",
+      "isActive": false,
+      "eventCount": 6,
+      "created At": "07-11-2024 01:28:44 PM",
+      "updated At": "07-11-2024 01:40:43 PM",
+      "cleared At": "07-11-2024 01:42:24 PM",
+      "expression": "IR > 29",
+      "alarmName": "Monitoring Track RLY",
+      "category": "Testing",
+      "severity": "CRITICAL",
+      "stns": [
+        "NOQ",
+        "JGM",
+        "SUA"
+      ],
+      "duration": 2,
+      "name": "C3T",
+      "location": "L2A"
+    },
+    {
+      "alarmId": "fa36a8d1-91fd-45a3-a9c1-e9dc2dee37ff",
+      "id": "{NOQ 2T L3 TRACK RLY}-f469d718-1ce5-4fb5-a083-c4cf8520c498",
+      "isActive": false,
+      "eventCount": 7,
+      "created At": "07-11-2024 01:28:49 PM",
+      "updated At": "07-11-2024 01:58:49 PM",
+      "cleared At": "07-11-2024 02:02:16 PM",
+      "expression": "IR > 29",
+      "alarmName": "Monitoring Track RLY",
+      "category": "Testing",
+      "severity": "CRITICAL",
+      "stns": [
+        "NOQ",
+        "JGM",
+        "SUA"
+      ],
+      "duration": 2,
+      "name": "2T",
+      "location": "L3"
+    },
+    {
+      "alarmId": "1166daac-72f7-48cc-8718-4dc23fd3f2e8",
+      "id": "{NOQ 134T EAST HUT TRACK RLY}-f469d718-1ce5-4fb5-a083-c4cf8520c498",
+      "isActive": false,
+      "eventCount": 16,
+      "created At": "07-11-2024 01:29:00 PM",
+      "updated At": "07-11-2024 02:44:00 PM",
+      "cleared At": "07-11-2024 02:48:06 PM",
+      "expression": "IR > 29",
+      "alarmName": "Monitoring Track RLY",
+      "category": "Testing",
+      "severity": "CRITICAL",
+      "stns": [
+        "NOQ",
+        "JGM",
+        "SUA"
+      ],
+      "duration": 2,
+      "name": "134T",
+      "location": "EAST HUT"
+    },
+    {
+      "alarmId": "3d8877dd-6fa5-4dff-8de8-9e2c0be55743",
+      "id": "{NOQ C46T EHO TRACK RLY}-f469d718-1ce5-4fb5-a083-c4cf8520c498",
+      "isActive": true,
+      "eventCount": 16,
+      "created At": "07-11-2024 01:29:19 PM",
+      "updated At": "07-11-2024 02:44:18 PM",
+      "cleared At": "",
+      "expression": "IR > 29",
+      "alarmName": "Monitoring Track RLY",
+      "category": "Testing",
+      "severity": "CRITICAL",
+      "stns": [
+        "NOQ",
+        "JGM",
+        "SUA"
+      ],
+      "duration": 2,
+      "name": "C46T",
+      "location": "EHO"
+    }
+  ]
+}
+
